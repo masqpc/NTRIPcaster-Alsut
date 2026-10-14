@@ -84,9 +84,6 @@ RUN mkdir -p /app/logs /app/data /app/config && \
     chmod -R 755 /app && \
     chmod +x /app/main.py /app/healthcheck.py
 
-# 创建数据卷挂载点
-VOLUME ["/app/logs", "/app/data", "/app/config"]
-
 # 暴露端口
 EXPOSE 2101 5757
 
